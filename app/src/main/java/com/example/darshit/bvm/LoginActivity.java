@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
         faculty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this,Faculty_Activity.class);
+                Intent intent = new Intent(LoginActivity.this,Faculty_Login_Activity.class);
                 startActivity(intent);
             }
         });
@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         student.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this,Student_Activity.class);
+                Intent intent = new Intent(LoginActivity.this,Student_Login_Activity.class);
                 startActivity(intent);
             }
         });

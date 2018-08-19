@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">BVM</string>
+
+    <string-array name="names">
+        <item>HOme</item>
+        <item>work</item>
+        <item>other</item>
+
+    </string-array>
 </resources>
