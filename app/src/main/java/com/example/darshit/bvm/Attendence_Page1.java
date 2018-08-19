@@ -1,22 +1,54 @@
 package com.example.darshit.bvm;
 
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.DatePicker;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Calendar;
 
 import me.srodrigo.androidhintspinner.HintAdapter;
 
 public class Attendence_Page1 extends AppCompatActivity {
 
+    TextView date;
+    Calendar mCurrentDate;
+    int day,month,year;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attendence__page1);
+
+        date = (TextView)findViewById(R.id.tv_date);
+        mCurrentDate = Calendar.getInstance();
+        day = mCurrentDate.get(Calendar.DAY_OF_MONTH);
+        month = mCurrentDate.get(Calendar.MONTH);
+        year = mCurrentDate.get(Calendar.YEAR);
+
+        month =month+1;
+        date.setText(day+"/"+month+"/"+year);
+
+        date.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DatePickerDialog datePickerDialog = new DatePickerDialog(Attendence_Page1.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int i, int i1, int i2) {
+                    i1=i1+1;
+                    date.setText(i2+"/"+i1+"/"+i);
+                    }
+                },year,month,day);
+                datePickerDialog.show();
+            }
+        });
 
 
 
