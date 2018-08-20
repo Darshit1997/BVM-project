@@ -41,9 +41,9 @@ public class Attendence_Page1 extends AppCompatActivity {
             public void onClick(View view) {
                 DatePickerDialog datePickerDialog = new DatePickerDialog(Attendence_Page1.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
-                    public void onDateSet(DatePicker view, int i, int i1, int i2) {
-                    i1=i1+1;
-                    date.setText(i2+"/"+i1+"/"+i);
+                    public void onDateSet(DatePicker view, int year, int month, int day) {
+                    month=month+1;
+                    date.setText(day+"/"+month+"/"+year);
                     }
                 },year,month,day);
                 datePickerDialog.show();
@@ -78,7 +78,7 @@ public class Attendence_Page1 extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
 
-                if(adapterView.getItemAtPosition(i).equals(""))
+                if(adapterView.getItemAtPosition(i).equals("Select Semester"))
                 {
 
                 mySpinner2.setVisibility(View.GONE);
@@ -102,15 +102,15 @@ public class Attendence_Page1 extends AppCompatActivity {
         mySpinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-               // if(adapterView.getItemAtPosition(i).equals("Choose Subject")) {
+                if(adapterView.getItemAtPosition(i).equals("Choose Subject")) {
 
-                //}
-                //else
-                //{
+                }
+                else
+                {
 
                     adapterView.getItemAtPosition(i);
 
-                //}
+                }
 
 
             }
