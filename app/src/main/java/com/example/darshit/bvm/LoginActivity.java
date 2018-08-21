@@ -15,16 +15,19 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        TextView textView = (TextView) findViewById(R.id.txtview_aboutus);
-        TextView textView1 = (TextView) findViewById(R.id.txtview_contactus);
+        TextView aboutus = (TextView) findViewById(R.id.txtview_aboutus);
+        TextView contactus = (TextView) findViewById(R.id.txtview_contactus);
 
 
         Button faculty = (Button) findViewById(R.id.btn_faculty);
         Button student = (Button) findViewById(R.id.btn_student);
 
 
-        textView.setPaintFlags(textView.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
-        textView1.setPaintFlags(textView.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
+
+
+
+        aboutus.setPaintFlags(aboutus.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
+        contactus.setPaintFlags(contactus.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
 
         faculty.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +45,14 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        aboutus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this,About_Us.class);
+                startActivity(intent);
+
+            }
+        });
 
 
     }

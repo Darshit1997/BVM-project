@@ -2,11 +2,13 @@ package com.example.darshit.bvm;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -27,6 +29,8 @@ public class Attendence_Page1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attendence__page1);
 
+        Button takeattendence = (Button) findViewById(R.id.btn_takeattendence);
+
         date = (TextView)findViewById(R.id.tv_date);
         mCurrentDate = Calendar.getInstance();
         day = mCurrentDate.get(Calendar.DAY_OF_MONTH);
@@ -35,6 +39,9 @@ public class Attendence_Page1 extends AppCompatActivity {
 
         month =month+1;
         date.setText(day+"/"+month+"/"+year);
+
+
+
 
         date.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,8 +93,8 @@ public class Attendence_Page1 extends AppCompatActivity {
 
                 else
                 {
-                    String item = (String) adapterView.getItemAtPosition(i);
-                    Toast.makeText(adapterView.getContext(),"selected" +item,Toast.LENGTH_SHORT).show();
+                    String pos = (String) adapterView.getItemAtPosition(i);
+                    Toast.makeText(adapterView.getContext(),"selected" +pos,Toast.LENGTH_SHORT).show();
                     mySpinner2.setVisibility(View.VISIBLE);
                 }
             }
@@ -108,7 +115,7 @@ public class Attendence_Page1 extends AppCompatActivity {
                 else
                 {
 
-                    adapterView.getItemAtPosition(i);
+                    String pos1 = (String)adapterView.getItemAtPosition(i);
 
                 }
 
@@ -118,6 +125,16 @@ public class Attendence_Page1 extends AppCompatActivity {
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
+            }
+        });
+
+        takeattendence.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                Intent intent = new Intent(Attendence_Page1.this,Attendence_Page2.class);
+                startActivity(intent);
             }
         });
 
