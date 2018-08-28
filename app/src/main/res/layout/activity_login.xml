@@ -6,20 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/academic_departments"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="66dp" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/txtview_contactus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="102dp"
+        android:layout_height="35dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="84dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="76dp"
         android:layout_marginTop="8dp"
         android:text="ContactUs"
+        android:textColor="#fdf6b3"
         android:textAlignment="center"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtview_aboutus"
+        app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_student"
-        app:layout_constraintVertical_bias="0.385" />
+        app:layout_constraintVertical_bias="0.331" />
 
     <Button
         android:id="@+id/btn_student"
@@ -30,6 +48,7 @@
         android:layout_marginTop="44dp"
         android:text="Student"
         android:textSize="25dp"
+        android:background="@drawable/mybutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,6 +64,7 @@
         android:layout_marginTop="144dp"
         android:text="Faculty"
         android:textSize="25dp"
+        android:background="@drawable/mybutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,20 +72,18 @@
 
     <TextView
         android:id="@+id/txtview_aboutus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="102dp"
+        android:layout_height="35dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="76dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:text="AboutUs"
         android:textAlignment="center"
         android:textSize="20dp"
+        android:textColor="#fdf6b3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toEndOf="@+id/txtview_contactus"
         app:layout_constraintTop_toBottomOf="@+id/btn_student"
-        app:layout_constraintVertical_bias="0.335" />
+        app:layout_constraintVertical_bias="0.331" />
 
 </android.support.constraint.ConstraintLayout>

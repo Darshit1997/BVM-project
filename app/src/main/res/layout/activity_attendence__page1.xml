@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Attendence_Page1">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/academic_departments"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="66dp" />
+    </LinearLayout>
+
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="298dp"
@@ -13,6 +28,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
+        android:textColor="#fdf6b3"
         android:entries="@style/Theme.AppCompat.Light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +41,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
+        android:textColor="#fdf6b3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner1" />
@@ -38,6 +55,7 @@
         android:layout_marginTop="84dp"
         android:textAlignment="center"
         android:textSize="30dp"
+        android:textColor="#fdf6b3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -51,9 +69,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
         android:text="Take attendence"
+        android:background="@drawable/mybutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner2"
         app:layout_constraintVertical_bias="0.101" />
+
+
+
 </android.support.constraint.ConstraintLayout>

@@ -7,6 +7,20 @@
     tools:context=".HomeActivity"
     tools:layout_editor_absoluteY="81dp">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/academic_departments"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="66dp" />
+    </LinearLayout>
+
     <ImageView
         android:layout_width="228dp"
         android:layout_height="267dp"

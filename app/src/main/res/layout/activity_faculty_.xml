@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".Faculty_Activity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/academic_departments"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="66dp" />
+    </LinearLayout>
+
     <Button
         android:id="@+id/button"
         android:layout_width="270dp"
@@ -13,8 +27,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:text="Time  Table"
+        android:text="Time Table"
         android:textSize="25dp"
+        android:background="@drawable/mybutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_fac_attendence" />
@@ -28,6 +43,7 @@
         android:layout_marginTop="16dp"
         android:text="Notice board"
         android:textSize="25dp"
+        android:background="@drawable/mybutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -41,6 +57,7 @@
         android:layout_marginTop="16dp"
         android:text="Student Result"
         android:textSize="25dp"
+        android:background="@drawable/mybutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
@@ -51,9 +68,10 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="52dp"
-        android:text="View Attendence"
+        android:layout_marginTop="16dp"
+        android:text="Attendence"
         android:textSize="25dp"
+        android:background="@drawable/mybutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -62,16 +80,18 @@
         android:id="@+id/button5"
         android:layout_width="270dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="Message"
         android:textSize="25dp"
+        android:background="@drawable/mybutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button8"
@@ -82,6 +102,7 @@
         android:layout_marginTop="16dp"
         android:text="Student Details"
         android:textSize="25dp"
+        android:background="@drawable/mybutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
@@ -95,11 +116,13 @@
         android:layout_marginTop="36dp"
         android:text="Faculty Home Page"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#fdf6b3"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 </android.support.constraint.ConstraintLayout>

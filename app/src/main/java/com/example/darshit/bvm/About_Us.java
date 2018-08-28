@@ -33,7 +33,7 @@ public class About_Us extends AppCompatActivity {
         setContentView(R.layout.activity_about__us);
         wb=(WebView)findViewById(R.id.WebView);
 
-        pg =(ProgressBar) findViewById(R.id.progressBar);
+       // pg =(ProgressBar) findViewById(R.id.progressBar);
 
       //  this.requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
        // setProgressBarIndeterminateVisibility(true);

@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Student_Login_Activity">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/academic_departments"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="66dp" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="224dp"
@@ -14,7 +29,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="104dp"
         android:text="Student Login"
-        android:textColor="#000000"
+        android:textColor="#fdf6b3"
         android:textSize="35dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,10 +46,12 @@
         android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Enter Your ID number"
+        android:textColorHint="#fdf6b3"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        />
 
     <EditText
         android:id="@+id/editText2"
@@ -47,6 +64,7 @@
         android:inputType="textPassword"
         android:hint="Enter your Password"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="#fdf6b3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
@@ -57,7 +75,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="Button"
+        android:text="Login"
+        android:background="@drawable/mybutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
@@ -72,6 +91,7 @@
         android:layout_marginTop="20dp"
         android:text="Forgot Password?"
         android:textSize="15dp"
+        android:textColor="#fdf6b3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"

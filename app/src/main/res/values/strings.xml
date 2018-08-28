@@ -2,6 +2,7 @@
     <string name="app_name">BVM</string>
 
     <string-array name="Semesters">
+        <item>Select Semester</item>
         <item>Semester 1</item>
         <item>Semester 2</item>
         <item>Semester 3</item>
@@ -13,21 +14,17 @@
 
     </string-array>
 
-    <string-array name="Hint1">
-        <item>sdfsdf</item>
-
-
-    </string-array>
-
     <string-array name="Subjects">
+        <item>Select Subject</item>
         <item>Subject 1</item>
         <item>Subject 2</item>
         <item>Subject 3</item>
         <item>Subject 4</item>
         <item>Subject 5</item>
         <item>Subject 6</item>
-
-
-
     </string-array>
+
+    <string name="HINT">ABCD</string>
+
+
 </resources>
