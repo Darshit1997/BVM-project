@@ -22,7 +22,8 @@ public class Attendence_Page1 extends AppCompatActivity {
 
     TextView date;
     Calendar mCurrentDate;
-    int day,month,year;
+    int day=0,month=0,year=0;
+//    String day,month,year;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,15 +33,16 @@ public class Attendence_Page1 extends AppCompatActivity {
         Button takeattendence = (Button) findViewById(R.id.btn_takeattendence);
 
         date = (TextView)findViewById(R.id.tv_date);
-        mCurrentDate = Calendar.getInstance();
-        day = mCurrentDate.get(Calendar.DAY_OF_MONTH);
-        month = mCurrentDate.get(Calendar.MONTH);
-        year = mCurrentDate.get(Calendar.YEAR);
 
-        month =month+1;
-        date.setText(day+"/"+month+"/"+year);
+            mCurrentDate = Calendar.getInstance();
+            day = mCurrentDate.get(Calendar.DAY_OF_MONTH);
+            month = mCurrentDate.get(Calendar.MONTH);
+            year = mCurrentDate.get(Calendar.YEAR);
 
-
+//        month =month+1;
+//        date.setText(day+"/"+month+"/"+year);
+//Toast.makeText(getApplicationContext(),"Day:"+day+",Month:"+month+",Year:"+year,Toast.LENGTH_SHORT).show();
+        date.setText(day+"/"+(month+1)+"/"+year);
 
 
         date.setOnClickListener(new View.OnClickListener() {
@@ -49,8 +51,10 @@ public class Attendence_Page1 extends AppCompatActivity {
                 DatePickerDialog datePickerDialog = new DatePickerDialog(Attendence_Page1.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int day) {
-                    month=month+1;
-                    date.setText(day+"/"+month+"/"+year);
+//                    month=month-1;
+//                    date.setText(day+"/"+month+"/"+year);
+                        int temp=month+1;
+                        date.setText(day+"/"+temp+"/"+year);
                     }
                 },year,month,day);
                 datePickerDialog.show();

@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/academic_departments"
+            app:srcCompat="@drawable/bg2"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="66dp" />
     </LinearLayout>
@@ -55,7 +55,7 @@
         android:layout_marginTop="84dp"
         android:textAlignment="center"
         android:textSize="30dp"
-        android:textColor="#fdf6b3"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
