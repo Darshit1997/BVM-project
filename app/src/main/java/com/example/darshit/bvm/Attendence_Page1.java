@@ -23,7 +23,6 @@ public class Attendence_Page1 extends AppCompatActivity {
     TextView date;
     Calendar mCurrentDate;
     int day=0,month=0,year=0;
-//    String day,month,year;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,10 +38,7 @@ public class Attendence_Page1 extends AppCompatActivity {
             month = mCurrentDate.get(Calendar.MONTH);
             year = mCurrentDate.get(Calendar.YEAR);
 
-//        month =month+1;
-//        date.setText(day+"/"+month+"/"+year);
-//Toast.makeText(getApplicationContext(),"Day:"+day+",Month:"+month+",Year:"+year,Toast.LENGTH_SHORT).show();
-        date.setText(day+"/"+(month+1)+"/"+year);
+            date.setText(day+"/"+(month+1)+"/"+year);
 
 
         date.setOnClickListener(new View.OnClickListener() {
@@ -51,8 +47,6 @@ public class Attendence_Page1 extends AppCompatActivity {
                 DatePickerDialog datePickerDialog = new DatePickerDialog(Attendence_Page1.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int day) {
-//                    month=month-1;
-//                    date.setText(day+"/"+month+"/"+year);
                         int temp=month+1;
                         date.setText(day+"/"+temp+"/"+year);
                     }
@@ -62,6 +56,66 @@ public class Attendence_Page1 extends AppCompatActivity {
         });
 
 
+
+        final Spinner stspinner = (Spinner) findViewById(R.id.spinner);
+        final ArrayAdapter<CharSequence> stspad = ArrayAdapter.createFromResource(Attendence_Page1.this,R.array.starttime,android.R.layout.simple_spinner_item);
+        stspinner.setAdapter(stspad);
+
+
+        stspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if(adapterView.getItemAtPosition(i).equals("Start"))
+                {
+
+
+                }
+
+                else
+                {
+                    String pos = (String) adapterView.getItemAtPosition(i);
+                    Toast.makeText(adapterView.getContext(),"selected" +pos,Toast.LENGTH_SHORT).show();
+                    stspinner.setVisibility(View.VISIBLE);
+                }
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+
+
+        final Spinner endSpinner = (Spinner) findViewById(R.id.spinner3);
+        final ArrayAdapter<CharSequence> esad = ArrayAdapter.createFromResource(Attendence_Page1.this,R.array.endtime,android.R.layout.simple_spinner_item);
+        endSpinner.setAdapter(esad);
+
+
+        endSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if(adapterView.getItemAtPosition(i).equals("End"))
+                {
+
+                }
+
+                else
+                {
+                    String pos = (String) adapterView.getItemAtPosition(i);
+                    Toast.makeText(adapterView.getContext(),"selected" +pos,Toast.LENGTH_SHORT).show();
+                    endSpinner.setVisibility(View.VISIBLE);
+                }
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+
+            }
+        });
 
 
 
@@ -113,7 +167,7 @@ public class Attendence_Page1 extends AppCompatActivity {
         mySpinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if(adapterView.getItemAtPosition(i).equals("Choose Subject")) {
+                  if(adapterView.getItemAtPosition(i).equals("Choose Subject")) {
 
                 }
                 else

@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/bg2"
+            app:srcCompat="@drawable/img"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="66dp" />
 
@@ -95,7 +95,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_student" />
 
-        <!--ED452A,FBCC57,F9B54C,F3FAFF,324A5E,2A3633,242D2B,324A5E,BC992F faculty colors-->
+            <!--ED452A,FBCC57,F9B54C,F3FAFF,324A5E,2A3633,242D2B,324A5E,BC992F faculty colors-->
 
 
     <TextView
