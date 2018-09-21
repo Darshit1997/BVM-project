@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:background="#DCEDF3"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="0dp">
 
 
@@ -32,104 +32,138 @@
         android:id="@+id/about_us"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
         android:layout_weight="1"
         android:drawableTop="@drawable/about_us"
         android:text="About us"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintEnd_toStartOf="@+id/admission"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/admission"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
         android:layout_marginTop="40dp"
         android:layout_weight="1"
         android:drawableTop="@drawable/admissions"
-        android:text="Button"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="148dp" />
+        android:text="admissions"
+        app:layout_constraintEnd_toStartOf="@+id/courses"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/courses"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
         android:layout_marginTop="40dp"
         android:layout_weight="1"
         android:drawableTop="@drawable/courses"
-        android:text="Button"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="280dp" />
+        android:text="courses"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/faculty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
         android:layout_weight="1"
         android:drawableTop="@drawable/faculty"
-        android:text="Button"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="214dp" />
+        android:text="faculty"
+        app:layout_constraintEnd_toStartOf="@+id/placement"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_us" />
 
     <Button
         android:id="@+id/placement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="28dp"
         android:layout_weight="1"
         android:drawableTop="@drawable/placements"
-        android:text="Button"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="199dp" />
+        android:text="placement"
+        app:layout_constraintEnd_toStartOf="@+id/gallery"
+        app:layout_constraintTop_toBottomOf="@+id/admission" />
 
     <Button
         android:id="@+id/gallery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="28dp"
         android:layout_weight="1"
         android:drawableTop="@drawable/gallery"
-        android:text="Button"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="214dp" />
+        android:text="gallary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courses" />
 
     <Button
         android:id="@+id/eventndnews"
-        android:layout_width="wrap_content"
+        android:layout_width="109dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
         android:layout_weight="1"
         android:drawableTop="@drawable/event"
-        android:text="Button"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="338dp" />
+        android:text="events"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/infrastructure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faculty"
+        app:layout_constraintVertical_bias="0.049" />
 
     <Button
         android:id="@+id/infrastructure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="28dp"
         android:layout_weight="1"
         android:drawableTop="@drawable/infrastructure"
-        android:text="About us"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="302dp" />
+        android:text="infra"
+        app:layout_constraintEnd_toStartOf="@+id/contactus"
+        app:layout_constraintTop_toBottomOf="@+id/placement" />
 
     <Button
         android:id="@+id/contactus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
         android:layout_weight="1"
         android:drawableTop="@drawable/contactus"
-        android:text="About us"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="302dp" />
+        android:text="contact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gallery"
+        app:layout_constraintVertical_bias="0.132" />
 
     <Button
         android:id="@+id/map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_weight="1"
         android:drawableTop="@drawable/map"
-        android:text="About us"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="448dp" />
+        android:text="map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infrastructure" />
 
 
 </android.support.constraint.ConstraintLayout>
