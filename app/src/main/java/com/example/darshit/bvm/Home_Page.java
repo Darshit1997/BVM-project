@@ -19,11 +19,21 @@ public class Home_Page extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Button login = (Button) findViewById(R.id.btn_login);
+        Button aboutus = (Button) findViewById(R.id.about_us);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Home_Page.this,LoginActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        aboutus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home_Page.this,aboutus_homepage.class);
                 startActivity(intent);
 
             }

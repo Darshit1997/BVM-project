@@ -26,7 +26,8 @@
         <activity android:name=".Attendence_Page1" />
         <activity android:name=".Attendence_Page2" />
         <activity android:name=".About_Us" />
-        <activity android:name=".Home_Page"></activity>
+        <activity android:name=".Home_Page" />
+        <activity android:name=".aboutus_homepage"></activity>
     </application>
 
 </manifest>
