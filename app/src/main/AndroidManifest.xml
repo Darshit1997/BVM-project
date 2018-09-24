@@ -27,7 +27,13 @@
         <activity android:name=".Attendence_Page2" />
         <activity android:name=".About_Us" />
         <activity android:name=".Home_Page" />
-        <activity android:name=".aboutus_homepage"></activity>
+        <activity android:name=".aboutus_homepage" />
+        <activity android:name=".Courses_Page_1" />
+        <activity
+            android:name=".Course_Page1"
+            android:label="@string/title_activity_course__page1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".course_details"></activity>
     </application>
 
 </manifest>

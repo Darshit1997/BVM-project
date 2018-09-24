@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,9 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#DCEDF3"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="491dp">
+        android:layout_marginHorizontal="0dp">
 
 
         <ImageView
@@ -35,159 +33,133 @@
     <include
         android:id="@+id/app_bar"
         layout="@layout/app_bar"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
 
-    <Button
-        android:id="@+id/about_us"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="68dp"
-        android:layout_weight="1"
-        android:drawableTop="@drawable/about_us"
-        android:text="About us"
-        app:layout_constraintEnd_toStartOf="@+id/admission"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/admission"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="68dp"
-        android:layout_weight="1"
-        android:drawableTop="@drawable/admissions"
-        android:text="admissions"
-        app:layout_constraintEnd_toStartOf="@+id/courses"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:orientation="vertical"
+        android:weightSum="9">
 
-    <Button
-        android:id="@+id/courses"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginTop="68dp"
-        android:layout_weight="1"
-        android:drawableTop="@drawable/courses"
-        android:text="courses"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/faculty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:layout_weight="1"
-        android:drawableTop="@drawable/faculty"
-        android:text="faculty"
-        app:layout_constraintEnd_toStartOf="@+id/placement"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/about_us" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="9">
 
-    <Button
-        android:id="@+id/placement"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="28dp"
-        android:layout_weight="1"
-        android:drawableTop="@drawable/placements"
-        android:text="placement"
-        app:layout_constraintEnd_toStartOf="@+id/gallery"
-        app:layout_constraintTop_toBottomOf="@+id/admission" />
+            <Button
+                android:id="@+id/about_us"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:drawableTop="@drawable/about_us"
+                android:text="About us" />
 
-    <Button
-        android:id="@+id/gallery"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginTop="28dp"
-        android:layout_weight="1"
-        android:drawableTop="@drawable/gallery"
-        android:text="gallary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/courses" />
+            <Button
+                android:id="@+id/magazine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:drawableTop="@drawable/admissions"
+                android:text="Vishvakarma Magazine"
+                android:textSize="13dp" />
 
-    <Button
-        android:id="@+id/eventndnews"
-        android:layout_width="109dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_weight="1"
-        android:drawableTop="@drawable/event"
-        android:text="events"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/infrastructure"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/faculty"
-        app:layout_constraintVertical_bias="0.049" />
+            <Button
+                android:id="@+id/courses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:drawableTop="@drawable/courses"
+                android:text="courses" />
 
-    <Button
-        android:id="@+id/infrastructure"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginTop="28dp"
-        android:layout_weight="1"
-        android:drawableTop="@drawable/infrastructure"
-        android:text="infra"
-        app:layout_constraintEnd_toStartOf="@+id/contactus"
-        app:layout_constraintTop_toBottomOf="@+id/placement" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/contactus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        android:drawableTop="@drawable/contactus"
-        android:text="contact"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gallery"
-        app:layout_constraintVertical_bias="0.132" />
 
-    <Button
-        android:id="@+id/map"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        android:drawableTop="@drawable/map"
-        android:text="map"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.546"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/infrastructure"
-        app:layout_constraintVertical_bias="0.0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="9">
+
+            <Button
+                android:id="@+id/faculty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:drawableTop="@drawable/faculty"
+                android:text="faculty" />
+
+            <Button
+                android:id="@+id/placement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:drawableTop="@drawable/placements"
+                android:text="placement" />
+
+            <Button
+                android:id="@+id/gallery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:drawableTop="@drawable/gallery"
+                android:text="gallery" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="9">
+
+            <Button
+                android:id="@+id/eventndnews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:drawableTop="@drawable/event"
+                android:text="events" />
+
+            <Button
+                android:id="@+id/contactus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:drawableTop="@drawable/contactus"
+                android:text="contact" />
+
+            <Button
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:drawableTop="@drawable/map"
+                android:text="map" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="60dp"
         android:layout_height="27dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="13dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/mybutton"
         android:text="Login"
         android:textColor="#FFFFFF"
@@ -214,4 +186,4 @@
         app:srcCompat="@drawable/logo_bvm" />
 
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

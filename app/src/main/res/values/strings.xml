@@ -52,7 +52,7 @@
 
     <string name="HINT">ABCD</string>
 
-    <string name="abc"> <font color='black' size='20'>
+    <string name="abc"> <font style='text-align:justify' color='black' size='20'>
   <b><font size='35'>BIRLA VISHVAKARMA MAHAVIDYALAYA</font></b> \n \n
      <font size='20'>   \u2022  A PREMIER INSTITUTION OF CVM \n
         \u2022  FOUNDED IN 194 \n
@@ -103,16 +103,37 @@
 
 
 
-
-
-
-
-
     </font>
-
-
-
     </string>
+
+
+    <string name="title_activity_course__page1">Course_Page1</string>
+    <string name="tab_text_1">Graduate Program</string>
+    <string name="tab_text_2">Post Graduate Program</string>
+
+    <string-array name="section_format">
+        <item>\u2022 Civil Engineering</item>
+        <item>\u2022 Computer Engineering</item>
+        <item>\u2022 Electrical Engineering</item>
+        <item>\u2022 Electronics Engineering</item>
+        <item>\u2022 Mechanical Engineering</item>
+        <item>\u2022 Production Engineering</item>
+        <item>\u2022 Information Technology (SF)</item>
+        <item>\u2022 Electronic &amp; Communication (SF)</item>
+        <item>\u2022 Mechanical Engineering (SF)</item>
+        <item>\u2022 Production Engineering  (SF)</item>
+    </string-array>
+
+    <string-array name="section_format1">
+        <item>\u2022 Civil Engineering-M. Tech. Environmental Engg. </item>
+        <item>\u2022 Civil Engineering-M. Tech. Construction Engg. &amp; Mgt.</item>
+        <item>\u2022 Civil Engineering-M. Tech. Structural Engg.</item>
+        <item>\u2022 Civil Engineering-M. Tech. Trans. Sys. Engg.</item>
+        <item>\u2022 Computer Engineering-M. Tech. Computer Engg.</item>
+        <item>\u2022 Electrical Engineering-M. Tech. Electrical Engg.</item>
+        <item>\u2022 Mechanical Engineering-M. Tech. Machine Design</item>
+        <item>\u2022 Civil Engineering-Infrastructure Engineering and Technology</item>
+    </string-array>
 
 
 </resources>

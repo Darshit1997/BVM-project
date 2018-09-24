@@ -20,6 +20,7 @@ public class Home_Page extends AppCompatActivity {
 
         Button login = (Button) findViewById(R.id.btn_login);
         Button aboutus = (Button) findViewById(R.id.about_us);
+        Button courses = (Button) findViewById(R.id.courses);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,5 +39,15 @@ public class Home_Page extends AppCompatActivity {
 
             }
         });
+
+        courses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home_Page.this,Course_Page1.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }
