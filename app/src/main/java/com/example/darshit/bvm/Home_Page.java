@@ -21,6 +21,11 @@ public class Home_Page extends AppCompatActivity {
         Button login = (Button) findViewById(R.id.btn_login);
         Button aboutus = (Button) findViewById(R.id.about_us);
         Button courses = (Button) findViewById(R.id.courses);
+        Button map = (Button) findViewById(R.id.map);
+        Button fpage1 = (Button) findViewById(R.id.faculty);
+        Button mag = (Button) findViewById(R.id.magazine);
+
+
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +52,37 @@ public class Home_Page extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home_Page.this,Map_Bvm.class);
+                startActivity(intent);
+            }
+        });
+
+
+        fpage1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home_Page.this,Faculty_Guestpage1.class);
+                startActivity(intent);
+            }
+        });
+
+
+        mag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home_Page.this,Mag_Page1.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
 
 
     }

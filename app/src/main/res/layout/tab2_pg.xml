@@ -79,7 +79,7 @@
         android:paddingLeft="5dp"/>
 
     <TextView
-        android:id="@+id/section1_labe8"
+        android:id="@+id/section1_label8"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:background="@drawable/back1"

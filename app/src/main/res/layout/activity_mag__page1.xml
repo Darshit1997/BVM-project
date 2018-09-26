@@ -4,20 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".course_details">
+    tools:context=".Mag_Page1">
 
-
-    <WebView
-        android:id="@+id/WebView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-
-
-    </WebView>
 
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/progressBar3"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,8 +16,15 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/WebView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <WebView
+        android:id="@+id/wb_mag1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
 </android.support.constraint.ConstraintLayout>
