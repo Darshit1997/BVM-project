@@ -1,5 +1,6 @@
 package com.example.darshit.bvm;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,6 +25,9 @@ public class Home_Page extends AppCompatActivity {
         Button map = (Button) findViewById(R.id.map);
         Button fpage1 = (Button) findViewById(R.id.faculty);
         Button mag = (Button) findViewById(R.id.magazine);
+        Button placement = (Button) findViewById(R.id.placement);
+        Button contactus = (Button) findViewById(R.id.contactus);
+        Button gallery = (Button) findViewById(R.id.gallery);
 
 
 
@@ -78,6 +82,33 @@ public class Home_Page extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        placement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home_Page.this,Placement_Page1.class);
+                startActivity(intent);
+            }
+        });
+
+
+        contactus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home_Page.this,Contact_Us_Page1.class);
+                startActivity(intent);
+            }
+        });
+
+        gallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home_Page.this,Gallery_Page1.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 

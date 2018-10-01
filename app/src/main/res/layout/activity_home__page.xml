@@ -129,7 +129,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:drawableTop="@drawable/event"
-                android:text="events" />
+                android:text="events"
+                android:gravity="center"/>
 
             <Button
                 android:id="@+id/contactus"

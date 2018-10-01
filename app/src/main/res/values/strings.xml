@@ -107,6 +107,25 @@
     </string>
 
 
+    <string name="placementdetails"> <font style='text-align:justify' color='black' size='20'>
+        BVM, a premier engineering college, is considered to be top 1% among all engineering colleges in Gujarat. Since inception, BVM has a record of best Placement all over Gujarat. Around 35+companies, including MNCs like Infosys, Essar, TCS, L&amp;T, ABB, Torrent Power, Seimens, etc.. visit BVM every year for placement. \n\n
+        <b><font size='25'>Mr. Mehul Patel \n [I/C Training And Placement]</font></b> \n \n
+        <b><font size='25'>Dr. Mehul Shah \n [Assistant Training And Placement]</font></b> \n \n
+        <b><font size='25'>Contact:+91 9978997088/ +91 9909529395</font></b>
+
+
+    </font></string>
+
+
+    <string name="contactus"><font style='text-align:justify' color='black' size='20'>
+            <b>BVM Engineering College</b> , \n Vallabh Vidyanagar - 388120. GUJARAT, INDIA.  \n\n
+            Call : 02692-230-104 \n Fax : +91 2692 230762 \n Email : principal@bvmengineering.ac.in \n
+        To know more about bvm click the below link: \n
+
+
+        </font>
+    </string>
+
     <string name="title_activity_course__page1">Course_Page1</string>
     <string name="tab_text_1">Graduate Program</string>
     <string name="tab_text_2">Post Graduate Program</string>

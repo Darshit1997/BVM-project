@@ -37,7 +37,20 @@
         <activity android:name=".course_details" />
         <activity android:name=".Map_Bvm" />
         <activity android:name=".Faculty_Guestpage1" />
-        <activity android:name=".Mag_Page1"></activity>
+        <activity android:name=".Mag_Page1" />
+        <activity android:name=".Placement_Page1" />
+        <activity android:name=".Placement_1" />
+        <activity android:name=".Placement_2" />
+        <activity android:name=".Placement_3" />
+        <activity android:name=".Placement_4" />
+        <activity android:name=".Placement_5" />
+        <activity android:name=".Placement_6" />
+        <activity android:name=".Placement_7" />
+        <activity android:name=".Placement_8" />
+        <activity android:name=".Placement_9" />
+        <activity android:name=".Placement_10" />
+        <activity android:name=".Contact_Us_Page1" />
+        <activity android:name=".Gallery_Page1"></activity>
     </application>
 
 </manifest>
