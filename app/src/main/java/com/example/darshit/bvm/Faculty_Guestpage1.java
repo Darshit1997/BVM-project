@@ -39,6 +39,7 @@ listAdapter=new com.example.darshit.bvm.ExpandableListAdapter(this,listDataHeade
     private void prepareListData() {
         listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<String>>();
+        listDataHeader.size();
 
         // Adding child data
         listDataHeader.add("Civil Engineering");

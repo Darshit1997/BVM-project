@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/img"
+            app:srcCompat="@drawable/button1"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="66dp" />
     </LinearLayout>

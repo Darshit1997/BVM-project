@@ -6,10 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".Course_Page1">
+    tools:context=".Course_Page1"
+    android:background="@drawable/back">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
+        android:background="#037577"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <!--android:theme="@style/AppBarOverlay">-->
@@ -19,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark"
+            android:background="#037577"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/PopupOverlay"
             app:title="@string/app_name">
@@ -30,23 +32,23 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary">
+            android:background="#6FACAD">
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tabItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="#6FACAD"
                 android:text="@string/tab_text_1"
-                app:tabTextAppearance="@style/CustomTabText"
-                android:background="@color/colorPrimary" />
+                app:tabTextAppearance="@style/CustomTabText" />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tabItem2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="#6FACAD"
                 android:text="@string/tab_text_2"
-                app:tabTextAppearance="@style/CustomTabText"
-                android:background="@color/colorPrimary"/>
+                app:tabTextAppearance="@style/CustomTabText" />
 
         </android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>
