@@ -13,113 +13,122 @@
         android:id="@+id/section_label"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@drawable/back"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
+        android:paddingTop="12.5dp"
         android:text="Civil Engineering"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingTop="12.5dp"
-        android:paddingLeft="5dp"
-        android:background="@drawable/back"/>
-
+        android:textSize="20dp" />
 
 
     <TextView
         android:id="@+id/section_label2"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@drawable/back1"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
+        android:paddingTop="12.5dp"
         android:text="Computer Engineering"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingTop="12.5dp"
-        android:paddingLeft="5dp"
-        android:background="@drawable/back1"/>
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/section_label3"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@drawable/back"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
+        android:paddingTop="12.5dp"
         android:text="Electrical Engineering"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingTop="12.5dp"
-        android:paddingLeft="5dp"
-        android:background="@drawable/back"/>
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/section_label4"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@drawable/back1"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
+        android:paddingTop="12.5dp"
         android:text="Electronics Engineering"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingTop="12.5dp"
-        android:paddingLeft="5dp"
-        android:background="@drawable/back1"/>
+        android:textSize="20dp" />
 
 
     <TextView
         android:id="@+id/section_label5"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@drawable/back"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
+        android:paddingTop="12.5dp"
         android:text="Mechanical Engineering"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingTop="12.5dp"
-        android:paddingLeft="5dp"
-        android:background="@drawable/back"/>
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/section_label6"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@drawable/back1"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
+        android:paddingTop="12.5dp"
         android:text="Production Engineering"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingTop="12.5dp"
-        android:paddingLeft="5dp"
-        android:background="@drawable/back1"/>
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/section_label7"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@drawable/back"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
+        android:paddingTop="12.5dp"
         android:text="Information Technology (SF)"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingTop="12.5dp"
-        android:paddingLeft="5dp"
-        android:background="@drawable/back"/>
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/section_label8"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@drawable/back1"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
+        android:paddingTop="12.5dp"
         android:text="Electronic &amp; Communication (SF)"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingTop="12.5dp"
-        android:paddingLeft="5dp"
-        android:background="@drawable/back1"/>
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/section_label9"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@drawable/back"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
+        android:paddingTop="12.5dp"
         android:text="Mechanical Engineering (SF)"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingTop="12.5dp"
-        android:paddingLeft="5dp"
-        android:background="@drawable/back"/>
+        android:textSize="20dp" />
 
 
     <TextView
         android:id="@+id/section_label10"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@drawable/back1"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
+        android:paddingTop="12.5dp"
         android:text="Production Engineering  (SF)"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingTop="12.5dp"
-        android:paddingLeft="5dp"
-        android:background="@drawable/back1"/>
+        android:textSize="20dp" />
 </LinearLayout>

@@ -13,81 +13,88 @@
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:background="@drawable/back"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
         android:text="Civil Engineering-M. Tech. Environmental Engg."
         android:textColor="#000000"
-        android:paddingLeft="5dp"
-        android:textSize="25dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/section1_label2"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:background="@drawable/back1"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
         android:text="Civil Engineering-M. Tech. Construction Engg. &amp; Mgt."
         android:textColor="#000000"
-        android:paddingLeft="5dp"
-        android:textSize="25dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/section1_label3"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:background="@drawable/back"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
         android:text="Civil Engineering-M. Tech. Structural Engg."
         android:textColor="#000000"
-        android:paddingLeft="5dp"
-        android:textSize="25dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/section1_label4"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:background="@drawable/back1"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
         android:text="Civil Engineering-M. Tech. Trans. Sys. Engg."
         android:textColor="#000000"
-        android:paddingLeft="5dp"
-        android:textSize="25dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/section1_label5"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:background="@drawable/back"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
         android:text="Computer Engineering-M. Tech. Computer Engg."
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingLeft="5dp"/>
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/section1_label6"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:background="@drawable/back1"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
         android:text="Electrical Engineering-M. Tech. Electrical Engg."
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingLeft="5dp"/>
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/section1_label7"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:background="@drawable/back"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
         android:text="Mechanical Engineering-M. Tech. Machine Design"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingLeft="5dp"/>
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/section1_label8"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:background="@drawable/back1"
+        android:fontFamily="@font/adamina"
+        android:paddingLeft="5dp"
         android:text="Civil Engineering-Infrastructure Engineering and Technology)"
         android:textColor="#000000"
-        android:textSize="25dp"
-        android:paddingLeft="5dp"
-        />
+        android:textSize="20dp" />
 
 
 </LinearLayout>

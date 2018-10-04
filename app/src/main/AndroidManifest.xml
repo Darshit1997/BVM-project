@@ -52,6 +52,10 @@
         <activity android:name=".Contact_Us_Page1" />
         <activity android:name=".Gallery_Page1" />
         <activity android:name=".FullImageActivity"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

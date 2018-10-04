@@ -28,6 +28,7 @@
         android:id="@+id/contactusdetails"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
         android:padding="5dp"
         android:text="@string/contactus" />
 
@@ -36,6 +37,7 @@
         android:id="@+id/tvurl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
         android:padding="5dp"
         android:text="http://bvmengineering.ac.in/"
         android:textColor="#0C60F3"
