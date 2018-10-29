@@ -39,9 +39,7 @@
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
-        android:columnWidth="100dp"
-        android:numColumns="3"
-        android:stretchMode="columnWidth">
+        android:numColumns="3">
 
     </GridView>
 

@@ -8,7 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class Home_Page extends AppCompatActivity {
+public class Home_Page extends main_drawer  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

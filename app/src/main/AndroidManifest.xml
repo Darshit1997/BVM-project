@@ -12,7 +12,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,11 +52,18 @@
         <activity android:name=".Placement_10" />
         <activity android:name=".Contact_Us_Page1" />
         <activity android:name=".Gallery_Page1" />
-        <activity android:name=".FullImageActivity"></activity>
+        <activity android:name=".FullImageActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".main_drawer"
+            android:label="@string/title_activity_main_drawer"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".MsgPage1" />
+        <activity android:name=".MsgPage2"></activity>
     </application>
 
 </manifest>

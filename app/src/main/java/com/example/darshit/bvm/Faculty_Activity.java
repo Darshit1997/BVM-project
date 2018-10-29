@@ -14,6 +14,7 @@ public class Faculty_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_faculty_);
 
         Button faculty_attendence = (Button) findViewById(R.id.btn_fac_attendence);
+        Button msg = (Button) findViewById(R.id.button5);
 
         faculty_attendence.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -22,5 +23,18 @@ public class Faculty_Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        msg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Faculty_Activity.this,MsgPage1.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
     }
 }
