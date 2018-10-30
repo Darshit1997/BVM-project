@@ -14,7 +14,17 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.util.Calendar;
+import java.util.Iterator;
 
 import me.srodrigo.androidhintspinner.HintAdapter;
 
@@ -197,8 +207,44 @@ public class Attendence_Page1 extends AppCompatActivity {
         });
 
 
+        get_data();
 
+    }
+    public void get_data(){
+        String temp_url="http://slopped-woods.000webhostapp.com/function.php?req=att_sub&fac_id=1";
+        Toast.makeText(getApplicationContext(),temp_url,Toast.LENGTH_LONG).show();
+        StringRequest sq1=new StringRequest(Request.Method.GET, temp_url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try{
+                    Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
+                    JSONObject jobj=new JSONObject((response));
+                    String id=jobj.getString("id");
+                    String name=jobj.getString("name");
 
+                    String[] ids=id.split(",");
+                    String[] names=name.split(",");
+
+                    final Spinner s1=(Spinner) findViewById(R.id.spinner2);
+
+                    ArrayAdapter<String> gameKindArray= new ArrayAdapter<String>(Attendence_Page1.this,android.R.layout.simple_spinner_item, names);
+                    gameKindArray.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    s1.setAdapter(gameKindArray);
+
+                }
+                catch(Exception e1){
+                    e1.printStackTrace();
+                    Toast.makeText(getApplicationContext(),e1.toString(),Toast.LENGTH_LONG).show();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(),error.getMessage(),Toast.LENGTH_LONG).show();
+            }
+        }){
+        };
+        Volley.newRequestQueue(getApplicationContext()).add(sq1);
     }
 }
 
