@@ -13,7 +13,7 @@ public class MsgPage2 extends AppCompatActivity {
         setContentView(R.layout.activity_msg_page2);
 
 
-        ctv=(CheckedTextView) findViewById(R.id.ctv);
+      //  ctv=(CheckedTextView) findViewById(R.id.ctv);
 
     }
 }

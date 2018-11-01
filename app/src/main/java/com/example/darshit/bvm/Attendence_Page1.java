@@ -3,6 +3,7 @@ package com.example.darshit.bvm;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,7 @@ import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.util.Calendar;
 import java.util.Iterator;
@@ -33,7 +35,8 @@ public class Attendence_Page1 extends AppCompatActivity {
     TextView date;
     Calendar mCurrentDate;
     int day=0,month=0,year=0;
-
+    String pos;
+    String pos1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -161,8 +164,11 @@ public class Attendence_Page1 extends AppCompatActivity {
 
                 else
                 {
-                    String pos = (String) adapterView.getItemAtPosition(i);
-                    Toast.makeText(adapterView.getContext(),"selected" +pos,Toast.LENGTH_SHORT).show();
+                    pos = (String) adapterView.getItemAtPosition(i);
+                    String x=pos.substring(pos.length()-1);
+                    pos=x;
+                    get_data(x);
+//                    Toast.makeText(adapterView.getContext(),"selected" +pos,Toast.LENGTH_SHORT).show();
                     mySpinner2.setVisibility(View.VISIBLE);
                 }
             }
@@ -183,7 +189,7 @@ public class Attendence_Page1 extends AppCompatActivity {
                 else
                 {
 
-                    String pos1 = (String)adapterView.getItemAtPosition(i);
+                    pos1 = (String)adapterView.getItemAtPosition(i);
 
                 }
 
@@ -199,7 +205,25 @@ public class Attendence_Page1 extends AppCompatActivity {
         takeattendence.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                try {
+                    SharedPreferences.Editor patrick=getSharedPreferences("att_data",MODE_PRIVATE).edit();
+                    patrick.putString("fac_id","1");
+                    patrick.putString("sem",pos);
+                    patrick.putString("sub",pos1);
+                    Spinner stime_s=(Spinner) findViewById(R.id.spinner);
+                    Spinner etime_s=(Spinner) findViewById(R.id.spinner3);
+                    TextView d_tv=(TextView) findViewById(R.id.tv_date);
 
+                    String s_time=stime_s.getSelectedItem().toString();
+                    String e_time=etime_s.getSelectedItem().toString();
+                    String date1=d_tv.getText().toString();
+                    patrick.putString("s_time",s_time);
+                    patrick.putString("e_time",e_time);
+                    patrick.putString("date",date1);
+                    patrick.apply();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
                 Intent intent = new Intent(Attendence_Page1.this,Attendence_Page2.class);
                 startActivity(intent);
@@ -207,11 +231,12 @@ public class Attendence_Page1 extends AppCompatActivity {
         });
 
 
-        get_data();
+//        get_data();
 
     }
-    public void get_data(){
-        String temp_url="http://slopped-woods.000webhostapp.com/function.php?req=att_sub&fac_id=1";
+    public void get_data(String pos){
+        Toast.makeText(getApplicationContext(),pos,Toast.LENGTH_LONG).show();
+        String temp_url="http://192.168.43.156/bvm/function.php?req=att_sub&fac_id=1&sem="+pos;
         Toast.makeText(getApplicationContext(),temp_url,Toast.LENGTH_LONG).show();
         StringRequest sq1=new StringRequest(Request.Method.GET, temp_url, new Response.Listener<String>() {
             @Override
@@ -221,13 +246,19 @@ public class Attendence_Page1 extends AppCompatActivity {
                     JSONObject jobj=new JSONObject((response));
                     String id=jobj.getString("id");
                     String name=jobj.getString("name");
+                    String sub_id=jobj.getString("sub_id");
 
                     String[] ids=id.split(",");
                     String[] names=name.split(",");
+                    String[] sub_ids=sub_id.split(",");
 
+                    String[] data=new String[ids.length];
+                    for(int i=0;i<ids.length;i++){
+                        data[i]=sub_ids[i]+" - "+names[i];
+                    }
                     final Spinner s1=(Spinner) findViewById(R.id.spinner2);
 
-                    ArrayAdapter<String> gameKindArray= new ArrayAdapter<String>(Attendence_Page1.this,android.R.layout.simple_spinner_item, names);
+                    ArrayAdapter<String> gameKindArray= new ArrayAdapter<String>(Attendence_Page1.this,android.R.layout.simple_spinner_item, data);
                     gameKindArray.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                     s1.setAdapter(gameKindArray);
 

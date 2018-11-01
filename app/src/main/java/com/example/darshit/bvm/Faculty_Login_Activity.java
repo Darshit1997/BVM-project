@@ -47,7 +47,8 @@ public class Faculty_Login_Activity extends AppCompatActivity {
     }
     public void login(final String user,final String pass){
 //        String temp_url="http://bvm.epizy.com/test.php?username="+user+"&password="+pass;
-        String temp_url="https://slopped-woods.000webhostapp.com/function.php?utype=faculty&username="+user+"&password="+pass;
+
+        String temp_url="http://192.168.43.156/bvm/function.php?utype=faculty&username="+user+"&password="+pass;
         Toast.makeText(getApplicationContext(),temp_url,Toast.LENGTH_LONG).show();
         StringRequest sq1=new StringRequest(Request.Method.GET, temp_url, new Response.Listener<String>() {
             @Override
